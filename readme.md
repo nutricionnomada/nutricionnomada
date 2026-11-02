@@ -62,3 +62,19 @@ La especificación principal está en [docs/DOCUMENTO-MAESTRO-v1.md](docs/DOCUME
 Esta entrega amplía **solo el diseño y prototipo**: acceso demo, programas, detalles de ficha/revisión, plan vigente, perfil, evolución visual y resumen semanal. No hay autenticación, conexión a Supabase ni descarga de documentos. Las notas y los envíos nuevos son simulaciones; los hábitos existentes mantienen su guardado local. El selector de roles no constituye una barrera de seguridad.
 
 La usuaria ha autorizado una recreación del logo mostrado en el chat. Está en `public/brand/nutricion-nomada-recreado.png` y se usa en el lateral y el acceso demo mediante `app/components/brand.tsx`. Es una imitación, no el archivo original oficial.
+
+## Fase 2 — base técnica de acceso privado
+
+Abre **Acceso privado** en la navegación o `/acceso`. El código de autenticación y las rutas privadas ya están preparados, pero los formularios permanecen desactivados hasta conectar un proyecto Supabase de desarrollo. La demo de `/` sigue siendo pública y ficticia.
+
+Consulta [docs/FASE-2-BASE-TECNICA.md](docs/FASE-2-BASE-TECNICA.md) para tablas, políticas RLS, migración, configuración pendiente y límites de las pruebas. `.env.example` documenta variables sin valores. No se requiere una clave de servicio en el navegador.
+
+Con Node.js 24:
+
+```sh
+npm run test:auth
+npm run test:database
+npm run test:habits
+```
+
+No se han conectado ni publicado servicios reales. La Fase 3 conectará las funciones del prototipo al modelo protegido.

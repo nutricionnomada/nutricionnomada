@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import Brand from './components/brand';
 import Victories from './components/victories';
 import Prototype, { ClientSheet, DemoBanner } from './components/prototype';
@@ -31,6 +32,7 @@ export default function Home() {
    <div className="role-switch"><button className={isPro?'selected':''} onClick={()=>changeRole('professional')}>Profesional</button><button className={!isPro?'selected':''} onClick={()=>changeRole('client')}>Cliente</button></div>
    <p className="nav-label">PRINCIPAL</p>
    <nav>{nav.map(({title,icon:Icon})=><button key={title} className={`nav-item ${tab===title?'active':''}`} aria-current={tab===title?'page':undefined} onClick={()=>navigate(title)}><Icon size={19}/>{title}{title==='Revisiones'&&!reviewed&&<span className="nav-count">2</span>}</button>)}</nav>
+   <Link className="nav-item private-access" href="/acceso"><Users size={19}/>Acceso privado</Link>
    <div className="sidebar-bottom"><div className="help-card"><span className="help-leaf"><Leaf size={23}/></span><h3>Cuidamos de ti también</h3><p>Pequeños pasos.<br/>Grandes cambios.</p><span>Crece a tu ritmo <ArrowUpRight size={15}/></span></div><div className="profile"><span className="avatar mint">{isPro?'EV':'CM'}</span><div><strong>{isPro?'Elena Vega':'Clara Martín'}</strong><small>{isPro?'Nutricionista · Demo':'Cliente · Demo'}</small></div><LogOut size={16} className="muted"/></div></div>
   </aside>
   {mobile&&<button className="overlay" aria-label="Cerrar menú" onClick={()=>setMobile(false)}/>}
