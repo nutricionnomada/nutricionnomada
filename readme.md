@@ -43,8 +43,10 @@ Esta estructura inicial no incluye autenticación, base de datos, agenda real ni
 
 En ambos paneles, abre **Registro de Victorias** en la navegación.
 
-- Profesional: selecciona un cliente ficticio y la semana. Asigna hábitos de las siete categorías del catálogo o personaliza su texto, con un objetivo acordado. Puedes editar o quitar hábitos y escribir un comentario semanal.
-- Cada semana es independiente. Una semana nueva empieza vacía; puedes copiar los hábitos de la anterior, sin copiar marcas, emociones ni comentarios.
+- Profesional: selecciona un cliente ficticio y la semana. Selecciona una vez los hábitos del acompañamiento, de las siete categorías del catálogo o con texto personalizado y un objetivo acordado. Se repiten automáticamente cada semana. Puedes adaptarlos cuando cambie el objetivo y escribir un comentario semanal.
+- Las semanas nuevas heredan los hábitos del acompañamiento; las marcas, emociones y comentarios son independientes. No hace falta copiar ni volver a seleccionar hábitos.
+- Edita los hábitos desde **Semana actual**: se aplican a esa semana y las siguientes, conservando las semanas anteriores. Editar el texto o el objetivo conserva las marcas del hábito; quitarlo elimina sus marcas solo desde la semana actual.
+- Los registros existentes de la versión anterior se migran automáticamente, conservando sus respuestas y usando la selección más reciente del cliente como base del acompañamiento.
 - Cliente: el selector de perfil permite simular cualquiera de los clientes ficticios. Marca los hábitos de lunes a domingo y registra energía, hambre, ánimo y descanso (1–5), victoria y dificultad del día. En móvil aparece una vista por día.
 - Profesional: consulta las marcas y el registro emocional sin modificar las respuestas del cliente.
 - Usa las flechas o la fecha para consultar otras semanas. Cualquier fecha seleccionada se ajusta al lunes correspondiente.
