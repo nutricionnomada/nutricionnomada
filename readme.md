@@ -61,4 +61,4 @@ La especificación principal está en [docs/DOCUMENTO-MAESTRO-v1.md](docs/DOCUME
 
 Esta entrega amplía **solo el diseño y prototipo**: acceso demo, programas, detalles de ficha/revisión, plan vigente, perfil, evolución visual y resumen semanal. No hay autenticación, conexión a Supabase ni descarga de documentos. Las notas y los envíos nuevos son simulaciones; los hábitos existentes mantienen su guardado local. El selector de roles no constituye una barrera de seguridad.
 
-El logo oficial mostrado en el chat todavía requiere su archivo original descargable para integrarlo sin alteraciones. No se ha recreado ni incluido una imitación.
+La usuaria ha autorizado una recreación del logo mostrado en el chat. Está en `public/brand/nutricion-nomada-recreado.png` y se usa en el lateral y el acceso demo mediante `app/components/brand.tsx`. Es una imitación, no el archivo original oficial.

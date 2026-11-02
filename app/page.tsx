@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Brand from './components/brand';
 import Victories from './components/victories';
 import Prototype, { ClientSheet, DemoBanner } from './components/prototype';
 import { Leaf, LayoutDashboard, Users, Utensils, ClipboardCheck, ArrowUpRight, ArrowRight, Search, Bell, Plus, ChevronRight, CalendarDays, Check, Menu, X, Droplets, Footprints, Heart, LogOut } from 'lucide-react';
@@ -24,9 +25,9 @@ export default function Home() {
  const nav = isPro ? tabs : [{ title: 'Resumen', icon: LayoutDashboard }, { title: 'Mi menú', icon: Utensils }, { title: 'Mis progresos', icon: Heart }, { title: 'Registro de Victorias', icon: ClipboardCheck }, { title: 'Resumen semanal', icon: ClipboardCheck }, { title: 'Mi plan', icon: Utensils }, { title: 'Mi evolución', icon: Heart }, { title: 'Mi programa', icon: CalendarDays }, { title: 'Mi perfil', icon: Users }, { title: 'Acceso demo', icon: Users }];
  return <div className="app-shell">
   <aside className={`sidebar ${mobile ? 'open' : ''}`}>
-   <a className="brand" href="/" aria-label="Nutrición Nómada, inicio"><span className="brand-icon"><Leaf size={27}/></span><span>nutrición<span className="brand-bottom">nómada<span className="brand-dot">.</span></span></span></a>
+   <a className="brand" href="/" aria-label="Nutrición Nómada, inicio"><Brand/></a>
    <button className="mobile-close icon-button" aria-label="Cerrar navegación" onClick={()=>setMobile(false)}><X/></button>
-   <div className="workspace-label">VIDA EN MOVIMIENTO</div>
+   <div className="workspace-label">TU ESPACIO DE BIENESTAR</div>
    <div className="role-switch"><button className={isPro?'selected':''} onClick={()=>changeRole('professional')}>Profesional</button><button className={!isPro?'selected':''} onClick={()=>changeRole('client')}>Cliente</button></div>
    <p className="nav-label">PRINCIPAL</p>
    <nav>{nav.map(({title,icon:Icon})=><button key={title} className={`nav-item ${tab===title?'active':''}`} aria-current={tab===title?'page':undefined} onClick={()=>navigate(title)}><Icon size={19}/>{title}{title==='Revisiones'&&!reviewed&&<span className="nav-count">2</span>}</button>)}</nav>

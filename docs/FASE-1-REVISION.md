@@ -6,7 +6,7 @@ Especificación principal: `DOCUMENTO-MAESTRO-v1.md`, aportada por la usuaria. E
 
 | Área | Situación anterior | Entrega de Fase 1 | Pendiente |
 |---|---|---|---|
-| Identidad | Verde, beige y marca provisional | Azul marino en títulos/navegación, menta en acciones, blanco y beige; lema «Vida en movimiento» | Incorporar el fichero original del logo, sin alterarlo |
+| Identidad | Verde, beige y marca provisional | Azul marino en títulos/navegación, menta en acciones, blanco y beige; lema «Vida en movimiento» | Recreación autorizada incorporada; sustituible por el archivo original cuando esté disponible |
 | Acceso | Selector de rol sin explicación de acceso | Pantalla de acceso demo con dos entradas y aviso permanente de simulación | Supabase Auth, invitaciones, recuperación y permisos de servidor (Fase 2) |
 | Dashboard profesional | Clientes, planes y contadores parciales | Seis indicadores del documento y accesos rápidos; contadores ficticios explícitos | Cálculos reales desde los datos (Fase 3) |
 | Fichas | Nombre y objetivo | Vista de información general, nutricional, programa, cuestionario y notas privadas simuladas | Edición, archivo, validaciones, persistencia y autorización (Fases 2–3) |
@@ -27,9 +27,9 @@ Especificación principal: `DOCUMENTO-MAESTRO-v1.md`, aportada por la usuaria. E
 - Los precios son orientativos. No se presupone el número de sesiones de bonos o ampliaciones sin confirmación.
 - No hay pagos, IA, chat, integración de calendarios ni WhatsApp.
 
-## Logo oficial: bloqueo de archivo
+## Logo: recreación autorizada
 
-El logo oficial se ha mostrado en el chat, pero no se ha recibido un archivo descargable ni existe un activo de marca en el checkout. No se ha redibujado, generado ni sustituido por una imitación. Se conserva la marca provisional existente hasta incorporar el PNG/JPG/SVG original. La identidad de Fase 1 queda parcialmente pendiente por este motivo.
+La usuaria ha autorizado expresamente generar una imitación del logo mostrado en el chat. Esta indicación posterior modifica el requisito inicial de usar exclusivamente el archivo original. La recreación se incluye en `public/brand/nutricion-nomada-recreado.png`, en el lateral y el acceso demo, con azul marino, lema menta, globo y avión. No se presenta como archivo original oficial. Se conserva la proporción al mostrarla en móvil y escritorio; se puede sustituir por el original cuando se disponga de él.
 
 ## Revisión y publicación
 
