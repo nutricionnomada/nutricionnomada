@@ -54,3 +54,11 @@ En ambos paneles, abre **Registro de Victorias** en la navegación.
 Los registros se guardan automáticamente con `localStorage`, separados por cliente y semana. Se comparten entre ambos paneles **solo en el mismo navegador y origen**. No son cuentas independientes ni sincronización en servidor. Si el almacenamiento está bloqueado, se muestra un aviso y los cambios solo permanecen en memoria. Borrar los datos del sitio elimina los registros. Los perfiles nuevos añadidos al resto de la demo siguen siendo temporales.
 
 El catálogo reproduce los hábitos proporcionados por Nutrición Nómada; la selección y los objetivos son responsabilidad del profesional. No se calculan penalizaciones ni una puntuación de éxito a partir del hambre o de las casillas vacías.
+
+## Documento Maestro y desarrollo por fases
+
+La especificación principal está en [docs/DOCUMENTO-MAESTRO-v1.md](docs/DOCUMENTO-MAESTRO-v1.md). La comparación, alcance de Fase 1, limitaciones y recorrido de revisión están en [docs/FASE-1-REVISION.md](docs/FASE-1-REVISION.md).
+
+Esta entrega amplía **solo el diseño y prototipo**: acceso demo, programas, detalles de ficha/revisión, plan vigente, perfil, evolución visual y resumen semanal. No hay autenticación, conexión a Supabase ni descarga de documentos. Las notas y los envíos nuevos son simulaciones; los hábitos existentes mantienen su guardado local. El selector de roles no constituye una barrera de seguridad.
+
+El logo oficial mostrado en el chat todavía requiere su archivo original descargable para integrarlo sin alteraciones. No se ha recreado ni incluido una imitación.
