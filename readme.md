@@ -29,7 +29,7 @@ npm start
 - En **Revisiones**, marca la revisión de Clara como completada y comprueba el contador del resumen.
 - En el panel cliente, registra o desmarca comidas, añade vasos de agua y guarda tu registro de bienestar.
 
-Todos los perfiles y registros son ficticios. El estado se conserva en memoria mientras navegas; al recargar se restaura la demostración. No introduzcas información personal real.
+Todos los perfiles y registros son ficticios. El Registro de Victorias se guarda en el almacenamiento local de este navegador; el resto del estado se conserva en memoria y se reinicia al recargar. No introduzcas información personal real.
 
 Esta estructura inicial no incluye autenticación, base de datos, agenda real ni envío de notificaciones. Los dos paneles comparten la misma demostración; los menús son ejemplos de interfaz y no planes personalizados.
 
@@ -38,3 +38,17 @@ Esta estructura inicial no incluye autenticación, base de datos, agenda real ni
 - `app/layout.tsx`: idioma, metadatos y estilos globales.
 - `app/page.tsx`: paneles, navegación y estado de la demostración.
 - `app/globals.css`: Tailwind y diseño adaptable.
+
+## Registro de Victorias
+
+En ambos paneles, abre **Registro de Victorias** en la navegación.
+
+- Profesional: selecciona un cliente ficticio y la semana. Asigna hábitos de las siete categorías del catálogo o personaliza su texto, con un objetivo acordado. Puedes editar o quitar hábitos y escribir un comentario semanal.
+- Cada semana es independiente. Una semana nueva empieza vacía; puedes copiar los hábitos de la anterior, sin copiar marcas, emociones ni comentarios.
+- Cliente: el selector de perfil permite simular cualquiera de los clientes ficticios. Marca los hábitos de lunes a domingo y registra energía, hambre, ánimo y descanso (1–5), victoria y dificultad del día. En móvil aparece una vista por día.
+- Profesional: consulta las marcas y el registro emocional sin modificar las respuestas del cliente.
+- Usa las flechas o la fecha para consultar otras semanas. Cualquier fecha seleccionada se ajusta al lunes correspondiente.
+
+Los registros se guardan automáticamente con `localStorage`, separados por cliente y semana. Se comparten entre ambos paneles **solo en el mismo navegador y origen**. No son cuentas independientes ni sincronización en servidor. Si el almacenamiento está bloqueado, se muestra un aviso y los cambios solo permanecen en memoria. Borrar los datos del sitio elimina los registros. Los perfiles nuevos añadidos al resto de la demo siguen siendo temporales.
+
+El catálogo reproduce los hábitos proporcionados por Nutrición Nómada; la selección y los objetivos son responsabilidad del profesional. No se calculan penalizaciones ni una puntuación de éxito a partir del hambre o de las casillas vacías.
